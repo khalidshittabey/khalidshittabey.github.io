@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+.without-ring {
+  @apply focus:ring-0 focus:ring-offset-0;
+}
+.without-outline {
+  @apply focus:outline-0 focus:outline-offset-0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{font-family: 'Source Sans Pro', sans-serif;}
+
+h1 {
+  @apply lg:text-[48px] md:text-[44px] text-[24px];
+}
+h2 {
+  @apply lg:text-[40px] sm:text-[36px] text-[32px];
+}
+h3 {
+  @apply lg:text-[32px] md:text-[28px] text-[24px];
+}
+h4 {
+  @apply lg:text-[26px] text-[23px];
+}
+h5 {
+  @apply lg:text-[22px] text-[20px];
+}
+h6 {
+  @apply lg:text-[20px] text-[18px];
+}
+
+.slick-prev{
+  @apply absolute left-0 top-10 opacity-30;
+}
+.slick-next{
+  @apply absolute right-0 top-10 opacity-30;
+}
+.slider-nav .slick-slide img{
+  @apply rounded-md border border-transparent lg:p-1;
+}
+.slider-nav .slick-current.slick-active img{
+  @apply border-black;
+}
+
+
+.owl-dots {
+  /* @apply !absolute bottom-20; */
+}
+.owl-dots button.owl-dot {
+  @apply bg-white/30
+}
+.owl-dots button.owl-dot.active {
+  @apply bg-white;
+}
